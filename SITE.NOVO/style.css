@@ -1,0 +1,186 @@
+:root{
+  --cor-preto: rgb(104, 102, 102);
+  --cor-texto: #000000;
+  --cor-branco: white;
+}
+
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.topo1{
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  height: 300px;
+}
+
+.parte-cima1{
+  background-color: var(--cor-preto);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.parte-cima1 img{
+  width: 150px;
+}
+
+.parte-baixo1, .parte-cima{
+  padding: 20px;
+}
+
+.parte-baixo1 nav{
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  justify-items: center;
+}
+
+.parte-baixo1 nav a{
+  text-decoration: none;
+  color: var(--cor-texto);
+}
+
+.corpo1 .banner1{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.corpo1 .banner1 h1{
+  color: var(--cor-branco);
+}
+
+.parte-cima1 .pesquisa1 input{
+  outline: none;
+  width: calc(100% - 50px);
+  border: none;
+  background: transparent !important;
+}
+
+.parte-cima1 .pesquisa1{
+  background: var(--cor-branco);
+  border-radius: 5px;
+  padding: 10px;
+  width: 500px;
+}
+/* 2 */
+
+.sapatos1{
+  grid-template-columns: repeat(4,1fr);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-left: 10px;
+  line-height: 25px;
+  gap: 15%;
+  margin-top: 3%;
+}
+.roupas1{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  text-align: center;
+  margin-top: 2%;
+
+}
+
+#botao{
+  width: 150px; 
+  height: 38px;
+ background-color: black;
+ color: rgb(255, 255, 255);
+ display: block;
+ margin: 0 auto;
+ margin-top: 3%;
+}
+
+.fileira1{
+  display: flex;
+}
+
+.fileira1 h2 span {
+  display: block;
+}
+/* 3 */
+:root{
+  --color--preto: black;
+  --color--branca: white;
+}
+
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+#titulo1{
+  position: relative; /* define a posição relativa para que os pseudo-elementos sejam posicionados corretamente */
+  text-align: center; /* centraliza o texto do título */
+  font-size: 40px; /* ajuste a fonte e o tamanho do título conforme necessário */
+  font-weight: bold;
+}
+
+#titulo1::before,
+#titulo1::after {
+content: ""; /* define o conteúdo dos pseudo-elementos como vazio */
+position: absolute; /* define a posição absoluta para que as linhas fiquem nos lados do título */
+top: 60%; /* posiciona as linhas no centro verticalmente */
+width: 100px; /* ajuste a largura das linhas conforme necessário */
+height: 2px; /* ajuste a altura das linhas conforme necessário */
+background-color: black; /* define a cor das linhas */
+}
+
+#titulo1::before {
+  left: 103%; /* posiciona a linha esquerda */
+}
+
+#titulo1:after {
+  right: 103%; /* posiciona a linha direita */
+}
+
+/* #ofertassemanais{
+  background-color: rgba(255, 0, 0, 0.689);
+} */
+#ofertassemanais1 h3 {
+  text-align: center;
+  font-style: italic;
+  font-size: 40px;
+  margin: 30px;
+
+}
+#ofertassemanais1 li img {
+ display: inline-block;
+  height: 130px;
+  width: 150px;
+ 
+} 
+
+.flex1 ul{
+  display: grid !important;
+  grid-template-columns: repeat(7, 1fr);
+  text-align: center;
+  list-style: none;
+  justify-items: center;
+  font-size: 20px;
+  font-style: italic;
+ 
+}
+
+#ofertassemanais1 ul li:hover, #ofertassemanais ul li:hover{
+  text-decoration: underline;
+  font-size: 25px;
+}
+
+#ofertassemanais1 ul, #ofertassemanais ul{ 
+  padding: 30px;
+  }
+  
+#ofertassemanais1 ul li:hover, #ofertassemanais ul li:hover{
+      text-decoration: underline;
+      font-size: 25px;
+  }
